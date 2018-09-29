@@ -9,3 +9,17 @@ Step 1 - Use Mocha and Chai
       npm install -g mocha
 
       npm install chai
+
+
+      mocha sudoku_solver_spec.js
+      
+
+1. parseBoard: Parse the string into a 2D array and convert strings to integers for easier manipulation.
+
+2. saveEmptyPositions: Iterate through the board and save all of the empty positions into an array so we can track which numbers are mutable and keep order to our testing.
+
+3. checkRow, checkColumn, check3x3Square, checkValue: Check the column, row, and current 3x3 square for a match to the current value tested, which can all be called with checkValue.
+
+4. solvePuzzle: Take the parsed Sudoku board and the array of empty positions, and find the solution.
+
+5. solveSudoku: Parse the board, save the empty positions, and pass them to solvePuzzle.

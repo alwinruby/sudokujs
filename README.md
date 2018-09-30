@@ -24,19 +24,24 @@ Step 1 - Use Mocha and Chai
 
 5. solveSudoku: Parse the board, save the empty positions, and pass them to solvePuzzle.
 
-####Step 1
+
+
+#### Step 1
 
 Initial set up test 1 - create a new sudoku board
 
-####Step 2
+#### Step 2
 
 Test 2 - on the board get all the positions which are empty
 
-####Step 3
+#### Step 3
 
-Test 3 - Check the rows and columns, also the 3 by 3 mini squares. Three tests here.  Plus an additional one to check values.
+Tests 3 to 6 - Check the rows and columns, also the 3 by 3 mini squares. Three tests here.  Plus an additional one to check values.
 
-####Step 4
+#### Step 4
 
+Test 7 - The solution - function that can systematically check each possible value until we find a valid value.
 
-####Step 5
+#### Step 5
+
+Test 8 - Solve the problem

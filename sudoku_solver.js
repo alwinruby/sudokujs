@@ -26,3 +26,16 @@ module.exports.saveEmptyPositions = function(board) {
   // Return the positions
   return emptyPositions;
 };
+
+
+module.exports.checkRow = function(board, row, value) {
+  // Iterate through every value in the row
+  for(var i = 0; i < board[row].length; i++) {
+    // If a match is found, return false
+    if(board[row][i] === value) {
+      return false;
+    }
+  }
+  // If no match was found, return true
+  return true;
+};

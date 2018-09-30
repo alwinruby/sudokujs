@@ -12,7 +12,7 @@ Step 1 - Use Mocha and Chai
 
 
       mocha sudoku_solver_spec.js
-      
+
 
 1. parseBoard: Parse the string into a 2D array and convert strings to integers for easier manipulation.
 
@@ -23,3 +23,20 @@ Step 1 - Use Mocha and Chai
 4. solvePuzzle: Take the parsed Sudoku board and the array of empty positions, and find the solution.
 
 5. solveSudoku: Parse the board, save the empty positions, and pass them to solvePuzzle.
+
+####Step 1
+
+Initial set up test 1 - create a new sudoku board
+
+####Step 2
+
+Test 2 - on the board get all the positions which are empty
+
+####Step 3
+
+Test 3 - Check the rows and columns, also the 3 by 3 mini squares.
+
+####Step 4
+
+
+####Step 5

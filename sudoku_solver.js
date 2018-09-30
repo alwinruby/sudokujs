@@ -51,3 +51,33 @@ module.exports.checkColumn = function(board, column, value) {
   // If no match was found, return true
   return true;
 };
+
+module.exports.check3x3Square = function(board, column, row, value) {
+  // Save the upper left corner
+  var columnCorner = 0,
+      rowCorner = 0,
+      squareSize = 3;
+
+  // Find the left-most column
+  while(column >= columnCorner + squareSize) {
+    columnCorner += squareSize;
+  }
+
+  // Find the upper-most row
+  while(row >= rowCorner + squareSize) {
+    rowCorner += squareSize;
+  }
+
+  // Iterate through each row
+  for(var i = rowCorner; i < rowCorner + squareSize; i++) {
+    // Iterate through each column
+    for(var j = columnCorner; j < columnCorner + squareSize; j++) {
+      // Return false is a match is found
+      if(board[i][j] === value) {
+        return false;
+      }
+    }
+  }
+  // If no match was found, return true
+  return true;
+};

@@ -34,7 +34,7 @@ Test 2 - on the board get all the positions which are empty
 
 ####Step 3
 
-Test 3 - Check the rows and columns, also the 3 by 3 mini squares.
+Test 3 - Check the rows and columns, also the 3 by 3 mini squares. Three tests here.
 
 ####Step 4
 

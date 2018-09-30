@@ -74,4 +74,15 @@ describe('Sudoku Solver', function() {
       });
     });
 
+    describe('#check3x3Square()', function() {
+      it('should check that each value in a 3x3 square does not match the input', function() {
+        // No match. Return true
+        expect(solver.check3x3Square(parsedBoard, 2, 2, 1)).to.be.ok;
+        expect(solver.check3x3Square(parsedBoard, 7, 7, 9)).to.be.ok;
+        // Match found. Return false
+        expect(solver.check3x3Square(parsedBoard, 2, 2, 9)).to.not.be.ok;
+        expect(solver.check3x3Square(parsedBoard, 7, 7, 1)).to.not.be.ok;
+      });
+    });
+
 });
